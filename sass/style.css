@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Sora&display=swap");
+html h3 {
+  color: #ffe81f;
+  font-size: 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #ffe81f;
+  margin: 0;
+}
+
+.summary a {
+  background-color: rgb(37, 37, 37);
+  border: none;
+  color: #fff;
+  padding: 6px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+.summary a:hover {
+  background-color: opacity(50%);
+}
+
+h3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1.5rem;
+  width: 85%;
+  color: #ffe81f;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+a {
+  color: #ffe81f;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+a:hover {
+  color: #594667;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.intro header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg");
+  background-size: cover;
+  border-radius: 1.5rem;
+  text-align: right;
+  padding: 10rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffe81f;
+  color: rgb(37, 37, 37);
+  font-size: 1rem;
+  width: 100%;
+  padding: 10% 2.5rem;
+  border-radius: 100px/150px;
+  margin-top: -2rem;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary::before {
+  content: "";
+  padding: 2rem;
+  width: 5%;
+  height: 5%;
+  background: url(/zen-garden-projectg2/assets/icons8-star-wars.svg) no-repeat center center;
+  background-size: cover;
+  margin: 0.1rem auto;
+}
+
+.supporting footer {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(140, 122, 36) 100%);
+  height: 2rem;
+  clear: both;
+  text-align: right;
+  padding: 5rem;
+  bottom: 0;
+  border-radius: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(37, 37, 37);
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 85%;
+  color: #fff;
+  margin: 0;
+  padding: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'atoms' as *;
+
+// use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
+//The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
+
+.summary a {
+  @include star-wars-button;
+}
+
+h3 {
+  @include h3-style;
+}
+
+a {
+  @include a-style;
+}
+
+p {
+  @include p-style;
+}
+
+
