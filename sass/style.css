@@ -1,56 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Sora&display=swap");
-html h3 {
-  color: #ffe81f;
-  font-size: 2rem;
-}
-
-header h1 {
-  font-size: 4rem;
-  color: #ffe81f;
-  margin: 0;
-}
-
-.summary a {
-  background-color: rgb(37, 37, 37);
-  border: none;
-  color: #fff;
-  padding: 6px 13px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 1.5rem;
-  transition: background-color 0.3s ease;
-}
-.summary a:hover {
-  background-color: opacity(50%);
-}
-
-h3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  font-size: 1.75em;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 1.5rem;
-  width: 85%;
-  color: #ffe81f;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-a {
-  color: #ffe81f;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  text-decoration: none;
-}
-a:hover {
-  color: #594667;
-}
-
-p {
-  line-height: 1.5rem;
-}
-
 .intro header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg");
   background-size: cover;
@@ -74,25 +22,217 @@ p {
   line-height: 1.5rem;
   margin-bottom: 2rem;
 }
+.summary a {
+  background-color: rgb(37, 37, 37);
+  border: none;
+  color: #fff;
+  padding: 6px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+.summary a:hover {
+  background-color: rgb(54, 187, 248);
+  color: rgb(37, 37, 37);
+}
 
 .summary::before {
   content: "";
   padding: 2rem;
-  width: 5%;
-  height: 5%;
+  transform: scale(3);
   background: url(/zen-garden-projectg2/assets/icons8-star-wars.svg) no-repeat center center;
-  background-size: cover;
-  margin: 0.1rem auto;
+  margin: 1rem auto;
+}
+
+.design-archives ul {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.design-archives ul a {
+  background-color: #ffe81f;
+  border-radius: 12px;
+  color: rgb(37, 37, 37);
+  padding: 1rem;
+}
+.design-archives ul a:hover {
+  color: #ffe81f;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg");
+  object-fit: fill;
+  border: 3px solid #ffe81f;
 }
 
 .supporting footer {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(140, 122, 36) 100%);
-  height: 2rem;
-  clear: both;
   text-align: right;
+  font-size: 1.5rem;
   padding: 5rem;
-  bottom: 0;
   border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  width: 85%;
+  color: #ffe81f;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+a {
+  background-color: black;
+  color: rgb(54, 187, 248);
+}
+a:hover {
+  color: #ffe81f;
+}
+
+.design-name {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(37, 37, 37);
+}
+
+.designer-name {
+  font-style: italic;
+  color: #ffe81f;
+}
+.designer-name:hover {
+  color: rgb(54, 187, 248);
+}
+
+.design-archives {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/archive-foto.jpg");
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+  object-position: top;
+  border-radius: 1.5rem;
+  height: auto;
+  padding-bottom: 1rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+
+.design-selection ul {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.zen-resources ul {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.design-selection li:nth-child(1)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-mando.svg) no-repeat center;
+  transform: scale(0.9);
+}
+.design-selection li:nth-child(1)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+.design-selection li:nth-child(2)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-luke-skywalker.svg) no-repeat center center;
+  transform: scale(1.5);
+}
+.design-selection li:nth-child(2)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+.design-selection li:nth-child(3)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-darthvader.svg) no-repeat center center;
+  transform: scale(1.5);
+}
+.design-selection li:nth-child(3)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+.design-selection li:nth-child(4)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-r2-d2.svg) no-repeat center center;
+  transform: scale(1.5);
+}
+.design-selection li:nth-child(4)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+.design-selection li:nth-child(5)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-trooper.svg) no-repeat center center;
+  transform: scale(0.9);
+}
+.design-selection li:nth-child(5)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+.design-selection li:nth-child(6)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-yoda.svg) no-repeat center center;
+  transform: scale(0.8);
+}
+.design-selection li:nth-child(6)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+.design-selection li:nth-child(7)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-chewbacca.svg) no-repeat center center;
+  transform: scale(1.5);
+}
+.design-selection li:nth-child(7)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+.design-selection li:nth-child(8)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-c-3po.svg) no-repeat center center;
+  transform: scale(1.5);
+}
+.design-selection li:nth-child(8)::after {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
 }
 
 * {
@@ -107,8 +247,23 @@ body {
   font-family: "Sora", sans-serif;
   font-size: 85%;
   color: #fff;
-  margin: 0;
+  margin: 1rem auto;
   padding: 2em;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffe81f;
+  margin: auto 1rem;
+  font-weight: bolder;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

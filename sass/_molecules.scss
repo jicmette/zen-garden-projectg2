@@ -1,23 +1,129 @@
-@use 'variables' as *;
-@use 'atoms' as *;
+@use "variables" as *;
+@use "atoms" as *;
+@use "organisms" as *;
 
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 
-.summary a {
-  @include star-wars-button;
-}
 
 h3 {
   @include h3-style;
-}
-
-a {
-  @include a-style;
 }
 
 p {
   @include p-style;
 }
 
+a {
+  @include a-style-body;
+}
 
+.design-name {
+  @include design-names;
+}
+
+.designer-name {
+  @include designer-name-style;
+}
+
+.design-archives {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/archive-foto.jpg');
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+  object-position: top;
+  border-radius: 1.5rem;
+  height: auto;
+  padding-bottom: 1rem;
+  margin: 2rem auto;
+
+  @include grid-two-col;
+}
+
+.design-selection ul {
+  @include grid-designs;
+}
+
+.zen-resources ul {
+  @include grid-designs;
+}
+
+.design-selection li:nth-child(1)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-mando.svg) no-repeat center;
+  transform: scale(.9);
+  
+  & {
+    @include size-svg;
+  }
+}
+
+.design-selection li:nth-child(2)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-luke-skywalker.svg) no-repeat center center;
+  transform: scale(1.5);
+  
+  & {
+    @include size-svg;
+  }
+}
+
+.design-selection li:nth-child(3)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-darthvader.svg) no-repeat center center;
+  transform: scale(1.5);
+  
+  & {
+    @include size-svg;
+  }
+}
+
+.design-selection li:nth-child(4)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-r2-d2.svg) no-repeat center center;
+  transform: scale(1.5);
+  
+  & {
+    @include size-svg;
+  }
+}
+
+.design-selection li:nth-child(5)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-trooper.svg) no-repeat center center;
+  transform: scale(.9);
+  
+  & {
+    @include size-svg;
+  }
+}
+
+.design-selection li:nth-child(6)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-yoda.svg) no-repeat center center;
+  transform: scale(.8);
+
+  & {
+    @include size-svg;
+  }
+}
+
+.design-selection li:nth-child(7)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-chewbacca.svg) no-repeat center center;
+  transform: scale(1.5);
+
+  & {
+    @include size-svg;
+  }
+  
+}
+
+.design-selection li:nth-child(8)::after {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-c-3po.svg) no-repeat center center;
+  transform: scale(1.5);
+
+  & {
+    @include size-svg;
+  }
+}
