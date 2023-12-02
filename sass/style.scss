@@ -13,9 +13,26 @@ body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $color-text;
-  margin: 0;
+  margin: 1rem auto;
   padding: 2em;
+  
 }
+
+h1 {
+  font-size: 3rem;
+  color: $color-headlines;
+  margin: auto 1rem;
+  font-weight: bolder;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 
 

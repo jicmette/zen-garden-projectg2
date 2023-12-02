@@ -1,17 +1,19 @@
 @use "variables" as *;
 
 // mixins to take care of repeated patterns.
-html h3 {
+@mixin h3-style {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  width: 85%;
   color: $color-headlines;
-  font-size: 2rem;
-}
-header h1 {
-  font-size: 4rem;
-  color: $color-headlines;
-  margin: 0;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
-@mixin star-wars-button($color: $background-color) {
+
+@mixin star-wars-black-button($color: $background-color) {
   background-color: $color;
   border: none;
   color: $color-text;
@@ -23,30 +25,18 @@ header h1 {
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: opacity($color: 50%);
+    background-color: $color-a;
+    color: $color-text-light;
   }
 }
 
-@mixin h3-style {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  font-size: 1.75em;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 1.5rem;
-  width: 85%;
-  color: $color-headlines;
-  margin: 1rem;
-  padding: 1rem;
-}
 
-@mixin a-style {
-  color: $color-headlines;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  text-decoration: none;
+@mixin a-style-body {
+  background-color: black; 
+  color: $color-a;
 
   &:hover {
-    color: $color-a;
+    color: $color-headlines;
   }
 }
 
@@ -54,4 +44,55 @@ header h1 {
   line-height: 1.5rem;
 }
 
+@mixin grid-designs {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
 
+@mixin grid-two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+
+@mixin a-style-archive {
+    background-color: $color-headlines;
+    border-radius: 12px;
+    color: $color-text-light;
+    padding: 1rem;
+
+  &:hover {
+    color: $color-headlines;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg');
+    object-fit: fill;
+    border: 3px solid $color-headlines;
+    
+  }
+}
+
+@mixin size-svg {
+  padding: 3rem;
+  display: block;
+  margin: 1rem;
+}
+
+@mixin design-names {
+  font-size: 2rem;
+  color: $color-text;
+  text-align: center;
+  background-color: $background-color;
+}
+
+@mixin designer-name-style {
+  font-style: italic;
+  color: $color-headlines;
+
+  &:hover {
+    color: $color-a;
+  }
+}

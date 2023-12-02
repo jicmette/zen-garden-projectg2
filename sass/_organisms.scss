@@ -1,4 +1,6 @@
 @use '_variables' as *;
+@use '_atoms' as *;
+
 
 .intro header { 
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg');
@@ -22,28 +24,45 @@
     text-align: center;
     line-height: $line-height;
     margin-bottom: 2rem;
+
+    a {
+      @include star-wars-black-button;
+    }
   }
-  
+
   .summary::before {
     content: "";
     padding: 2rem;
-    width: 5%;
-    height: 5%;
+    transform: scale(3);
     background: url(/zen-garden-projectg2/assets/icons8-star-wars.svg) no-repeat center center;
-    background-size: cover;
-    margin: 0.1rem auto;
+    margin: 1rem auto;
   }
 
+  .design-archives ul {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+
+    a {
+      @include a-style-archive;
+    }
+    
+  }
+  
 .supporting footer {
     background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 1) 0%,
       rgba(140, 122, 36, 1) 100%
     );
-    height: 2rem;
-    clear: both;
     text-align: right;
+    font-size: 1.5rem;
     padding: 5rem;
-    bottom: 0;
     border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    font-weight: bold;
   }
+
+  
