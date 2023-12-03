@@ -53,27 +53,73 @@
 }
 .design-archives ul a {
   background-color: #ffe81f;
-  border-radius: 12px;
+  border-radius: 1.5rem;
   color: rgb(37, 37, 37);
   padding: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .design-archives ul a:hover {
   color: #ffe81f;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg");
   object-fit: fill;
-  border: 3px solid #ffe81f;
 }
 
 .supporting footer {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(140, 122, 36) 100%);
-  text-align: right;
-  font-size: 1.5rem;
-  padding: 5rem;
+  text-align: center;
+  padding: 4rem 3rem;
   border-radius: 1.5rem;
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  font-weight: bold;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+.supporting footer a {
+  background-color: rgba(0, 0, 0, 0);
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.supporting footer a:hover {
+  color: #fff;
+}
+
+.zen-validate-html::before {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-html-5.svg);
+  background-repeat: no-repeat;
+  display: block;
+  padding: 1.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.zen-validate-css::before {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-css.svg);
+  background-repeat: no-repeat;
+  display: block;
+  padding: 1.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.zen-license::before {
+  content: "";
+  background: url(https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo);
+  background-repeat: no-repeat;
+  display: block;
+  padding: 1.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.zen-github::before {
+  content: "";
+  background: url(/zen-garden-projectg2/assets/icons8-github.svg);
+  background-repeat: no-repeat;
+  display: block;
+  padding: 1.5rem 0;
+  margin: 0.5rem 0;
 }
 
 h3 {
@@ -93,10 +139,22 @@ p {
 
 a {
   background-color: black;
-  color: rgb(54, 187, 248);
+  color: #ffe81f;
 }
 a:hover {
-  color: #ffe81f;
+  color: rgb(54, 187, 248);
+}
+
+[role=contentinfo] {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/stars.jpg");
+  width: 85%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem auto;
+  text-align: right;
 }
 
 .design-name {
@@ -104,14 +162,6 @@ a:hover {
   color: #fff;
   text-align: center;
   background-color: rgb(37, 37, 37);
-}
-
-.designer-name {
-  font-style: italic;
-  color: #ffe81f;
-}
-.designer-name:hover {
-  color: rgb(54, 187, 248);
 }
 
 .design-archives {
@@ -133,18 +183,20 @@ a:hover {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
+  width: 85%;
+  margin: 1rem auto;
 }
 
 .zen-resources ul {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
+  width: 85%;
+  margin: 1rem auto;
 }
 
 .design-selection li:nth-child(1)::after {
