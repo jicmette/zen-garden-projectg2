@@ -197,7 +197,7 @@ a:hover {
   width: 95%;
   margin: 1rem auto;
   align-items: center;
-  margin: 0;
+  margin: 1rem auto;
 }
 .design-selection ul .design-name {
   font-size: 1.5rem;
