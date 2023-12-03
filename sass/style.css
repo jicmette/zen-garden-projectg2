@@ -313,8 +313,8 @@ html {
 body {
   font-family: "Sora", sans-serif;
   color: #fff;
-  margin: 1rem auto;
-  padding: 2em;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 h1 {
