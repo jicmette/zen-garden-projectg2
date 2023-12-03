@@ -57,6 +57,7 @@
   display: flex;
   gap: 1rem;
   padding: 0.5rem 0;
+  justify-content: center;
 }
 .design-archives ul a {
   background-color: #ffe81f;
@@ -76,18 +77,17 @@
 .supporting footer {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(140, 122, 36) 100%);
   text-align: center;
-  padding: 4rem 3rem;
+  padding: 4rem 2rem;
   border-radius: 1.5rem;
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: space-around;
   align-items: center;
+  width: 95%;
+  margin: 1rem auto;
 }
 .supporting footer a {
   background-color: rgba(0, 0, 0, 0);
   font-style: italic;
-  font-weight: lighter;
-  font-size: 1rem;
 }
 .supporting footer a:hover {
   color: #fff;
@@ -98,8 +98,8 @@
   background: url(/zen-garden-projectg2/assets/icons8-html-5.svg);
   background-repeat: no-repeat;
   display: block;
-  padding: 1.5rem 0;
-  margin: 0.5rem 0;
+  padding: 1.5rem;
+  margin: 0.5rem;
 }
 
 .zen-validate-css::before {
@@ -107,8 +107,8 @@
   background: url(/zen-garden-projectg2/assets/icons8-css.svg);
   background-repeat: no-repeat;
   display: block;
-  padding: 1.5rem 0;
-  margin: 0.5rem 0;
+  padding: 1.5rem;
+  margin: 0.5rem;
 }
 
 .zen-license::before {
@@ -116,8 +116,8 @@
   background: url(https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo);
   background-repeat: no-repeat;
   display: block;
-  padding: 1.5rem 0;
-  margin: 0.5rem 0;
+  padding: 1.5rem;
+  margin: 0.5rem;
 }
 
 .zen-github::before {
@@ -125,8 +125,8 @@
   background: url(/zen-garden-projectg2/assets/icons8-github.svg);
   background-repeat: no-repeat;
   display: block;
-  padding: 1.5rem 0;
-  margin: 0.5rem 0;
+  padding: 1.5rem;
+  margin: 0.5rem;
 }
 
 h3 {
@@ -164,11 +164,13 @@ a:hover {
   text-align: right;
 }
 
-.design-name {
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-  background-color: rgb(37, 37, 37);
+[role=navigation] {
+  margin: 1rem auto;
+  width: 95%;
+}
+
+.designer-name {
+  font-style: italic;
 }
 
 .design-archives {
@@ -192,9 +194,19 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
   gap: 2rem;
-  width: 85%;
+  width: 95%;
   margin: 1rem auto;
   align-items: center;
+  margin: 0;
+}
+.design-selection ul .design-name {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(37, 37, 37);
+}
+.design-selection ul .design-name:hover {
+  color: #ffe81f;
 }
 
 .zen-resources ul {
@@ -203,7 +215,7 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
   gap: 2rem;
-  width: 85%;
+  width: 95%;
   margin: 1rem auto;
   align-items: center;
 }

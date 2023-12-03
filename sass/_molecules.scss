@@ -30,13 +30,14 @@ a {
   text-align: right
 }
 
-.design-name {
-  @include design-names;
+[role=navigation] {
+  margin: 1rem auto;
+  width: 95%;
 }
 
-// .designer-name {
-//   @include designer-name-style;
-// }
+.designer-name {
+  @include designer-name-style;
+}
 
 .design-archives {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/archive-foto.jpg');
@@ -53,6 +54,15 @@ a {
 
 .design-selection ul {
   @include grid-designs;
+  margin: 0;
+  
+  .design-name{
+    @include design-names;
+    &:hover {
+      color: $color-headlines;
+    }
+  }
+  
 }
 
 .zen-resources ul {
