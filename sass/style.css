@@ -55,14 +55,14 @@
 
 .design-archives ul {
   display: flex;
-  gap: 2rem;
-  padding: 2rem 0;
+  gap: 1rem;
+  padding: 0.5rem 0;
 }
 .design-archives ul a {
   background-color: #ffe81f;
   border-radius: 1.5rem;
   color: rgb(37, 37, 37);
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
