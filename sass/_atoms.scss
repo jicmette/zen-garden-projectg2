@@ -33,10 +33,10 @@
 
 @mixin a-style-body {
   background-color: black; 
-  color: $color-a;
+  color: $color-headlines;
 
   &:hover {
-    color: $color-headlines;
+    color: $color-a;
   }
 }
 
@@ -48,9 +48,10 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
+  width: 85%;
+  margin: 1rem auto;
 }
 
 @mixin grid-two-col {
@@ -62,18 +63,33 @@
 
 @mixin a-style-archive {
     background-color: $color-headlines;
-    border-radius: 12px;
+    border-radius: 1.5rem;
     color: $color-text-light;
     padding: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    
 
   &:hover {
     color: $color-headlines;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg');
     object-fit: fill;
-    border: 3px solid $color-headlines;
     
   }
 }
+
+@mixin footer-a {
+  background-color: rgb(0, 0, 0, 0);
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1rem;
+
+  &:hover {
+    color: $color-text;
+}
+}
+
 
 @mixin size-svg {
   padding: 3rem;
@@ -90,9 +106,4 @@
 
 @mixin designer-name-style {
   font-style: italic;
-  color: $color-headlines;
-
-  &:hover {
-    color: $color-a;
-  }
 }

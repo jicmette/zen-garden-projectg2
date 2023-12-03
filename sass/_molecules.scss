@@ -18,13 +18,25 @@ a {
   @include a-style-body;
 }
 
+[role=contentinfo] {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/stars.jpg');
+  width: 85%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem auto;
+  text-align: right
+}
+
 .design-name {
   @include design-names;
 }
 
-.designer-name {
-  @include designer-name-style;
-}
+// .designer-name {
+//   @include designer-name-style;
+// }
 
 .design-archives {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/archive-foto.jpg');
