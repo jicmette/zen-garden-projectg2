@@ -47,8 +47,8 @@
 
   .design-archives ul {
     display: flex;
-    gap: 2rem;
-    padding: 2rem 0;
+    gap: 1rem;
+    padding: .5rem 0;
 
     a {
       @include a-style-archive;
