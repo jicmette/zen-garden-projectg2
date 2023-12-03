@@ -49,6 +49,7 @@
     display: flex;
     gap: 1rem;
     padding: .5rem 0;
+    justify-content: center;
 
     a {
       @include a-style-archive;
@@ -63,12 +64,13 @@
       rgba(140, 122, 36, 1) 100%
     );
     text-align: center;
-    padding: 4rem 3rem;
+    padding: 4rem 2rem;
     border-radius: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: space-around;
     align-items: center;
+    width: 95%;
+    margin: 1rem auto;
 
     a {
       @include footer-a;
@@ -80,8 +82,8 @@
     background: url(/zen-garden-projectg2/assets/icons8-html-5.svg);
     background-repeat: no-repeat;
     display: block;
-    padding: 1.5rem 0;
-    margin: .5rem 0;
+    padding: 1.5rem;
+    margin: .5rem;
   }
 
   .zen-validate-css::before {
@@ -89,8 +91,8 @@
     background: url(/zen-garden-projectg2/assets/icons8-css.svg);
     background-repeat: no-repeat;
     display: block;
-    padding: 1.5rem 0;
-    margin: .5rem 0;
+    padding: 1.5rem;
+    margin: .5rem;
   }
 
   .zen-license::before {
@@ -98,8 +100,8 @@
     background: url(https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo);
     background-repeat: no-repeat;
     display: block;
-    padding: 1.5rem 0;
-    margin: .5rem 0;
+    padding: 1.5rem;
+    margin: .5rem;
   }
 
   .zen-github::before {
@@ -107,6 +109,6 @@
     background: url(/zen-garden-projectg2/assets/icons8-github.svg);
     background-repeat: no-repeat;
     display: block;
-    padding: 1.5rem 0;
-    margin: .5rem 0;
+    padding: 1.5rem;
+    margin: .5rem;
   }
