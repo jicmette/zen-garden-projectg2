@@ -57,6 +57,14 @@ a {
 
 .zen-resources ul {
   @include grid-designs;
+
+  a {
+    background-color: inherit;
+  }
+
+  li:nth-child(5) {
+    grid-column: 1/3;
+  }
 }
 
 .design-selection li:nth-child(1)::after {

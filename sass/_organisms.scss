@@ -2,15 +2,22 @@
 @use '_atoms' as *;
 
 
-.intro header { 
+[role=banner] { 
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg');
     background-size: cover;
     border-radius: 1.5rem;
     text-align: right;
-    padding: 10rem;
+    width: 95%;
+    height: 100vh;
+    margin: 1rem auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+
+  }  
 .summary {
     display: flex;
     flex-wrap: wrap;

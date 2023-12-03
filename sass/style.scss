@@ -11,18 +11,21 @@ html {
 }
 body {
   font-family: $fonts-body;
-  font-size: 85%;
   color: $color-text;
-  margin: 1rem auto;
-  padding: 2em;
+  margin: 0 auto;
+  padding: 1em;
   
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: $color-headlines;
-  margin: auto 1rem;
+  margin: 1rem;
   font-weight: bolder;
+}
+
+h2 {
+  font-size: 1rem;
 }
 
 li {
