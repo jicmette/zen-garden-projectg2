@@ -40,6 +40,14 @@
   }
 }
 
+@mixin content-style {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: $background-content;
+}
+
+
 @mixin p-style {
   line-height: 1.5rem;
 }

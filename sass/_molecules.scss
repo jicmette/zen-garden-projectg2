@@ -65,6 +65,10 @@ a {
   
 }
 
+.preamble {
+  @include content-style;
+}
+
 .zen-resources ul {
   @include grid-designs;
 
