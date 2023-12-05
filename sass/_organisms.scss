@@ -27,10 +27,9 @@
     width: 100%;
     padding: 10% 2.5rem;
     border-radius: 100px/150px;
-    margin-top: -2rem;
+    margin-top: -3rem;
     text-align: center;
     line-height: $line-height;
-    margin-bottom: 2rem;
 
     a {
       @include star-wars-black-button;
@@ -43,6 +42,70 @@
     transform: scale(3);
     background: url(/zen-garden-projectg2/assets/icons8-star-wars.svg) no-repeat center center;
     margin: 1rem auto;
+  }
+
+  .summary::after {
+    content: "";
+    background: url(/zen-garden-projectg2/assets/millennium-falcon.svg) no-repeat center;
+    background-size:cover;
+    padding: 3rem;
+    margin: 1rem;
+    animation: hyperspace 10s linear infinite;
+  }
+
+  @keyframes hyperspace {
+    0% {
+      transform: scale(.8);
+    }
+
+    5% {
+      transform: rotate(45deg)
+    }
+
+    10% {
+      transform: rotate(90deg);
+  
+    }
+    15% {
+      transform: translate(1rem) rotate(90deg);
+    }
+    20% {
+      transform: translate(1.5rem) rotate(90deg);
+    }
+
+    25% {
+      transform: translate(2rem) rotate(90deg);
+    }
+
+    30% {
+      transform: translate(2.5rem) rotate(90deg);
+    }
+
+    35% {
+      transform: translate(3rem) rotate(90deg);
+    }
+
+    40% {
+      transform: translate(3rem) rotate(-45deg);
+    }
+
+    45% {
+      transform: translate(3rem) rotate(-90deg);
+    }
+
+    50% {
+      transform: translate(-.5rem) rotate(-90deg);
+    }
+  }
+
+
+  .preamble h3::before {
+    content: '';
+    background: url(/zen-garden-projectg2/assets/icons8-jedi-order.svg) no-repeat center;
+    padding: 3rem;
+    transform: scale(2);
+    margin: 0;
+    display: block;
   }
 
   .design-archives ul {
