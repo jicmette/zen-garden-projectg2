@@ -19,7 +19,7 @@ a {
 }
 
 [role=contentinfo] {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/stars.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/zen-garden-projectg2/assets/hyper-space.jpg) no-repeat center;
   width: 85%;
   height: auto;
   padding: 1rem;
@@ -66,6 +66,13 @@ a {
 }
 
 .preamble {
+  background-color: $background-content;
+  text-align: center;
+  @include content-style;
+}
+
+#zen-supporting {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/stars.jpg');
   @include content-style;
 }
 
