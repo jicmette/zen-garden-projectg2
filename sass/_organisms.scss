@@ -1,7 +1,7 @@
 @use "_variables" as *;
 @use "_atoms" as *;
 .intro {
-  @include medium-view {
+  @include large-view{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -73,7 +73,7 @@
   line-height: $line-height;
 
   a {
-    @include star-wars-black-button;
+    @include a-style-body;
   }
 }
 
@@ -81,8 +81,9 @@
   content: "";
   padding: 2rem;
   background: url(/zen-garden-projectg2/assets/icons8-star-wars.svg) no-repeat
-    center center;
+    center;
   margin: 1rem auto;
+  transform: scale(3);
 }
 
 .summary::after {
@@ -146,6 +147,7 @@
   padding: 3rem;
   margin-top: -3rem;
   display: block;
+  transform: scale(2);
 }
 
 .design-archives ul {
