@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Sora&display=swap");
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 997px) {
   .intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -21,7 +21,7 @@
   flex-direction: column;
   column-gap: 1rem;
 }
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 575px) {
   [role=banner] {
     grid-column: 1/4;
   }
@@ -31,7 +31,7 @@
   color: #ffe81f;
   font-weight: bolder;
 }
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 575px) {
   [role=banner] h1 {
     font-size: 4rem;
     align-self: end;
@@ -39,11 +39,16 @@
     margin: 0;
   }
 }
+@media only screen and (min-width: 997px) {
+  [role=banner] h1 {
+    font-size: 6rem;
+  }
+}
 [role=banner] h2 {
   font-size: 1rem;
   font-style: italic;
 }
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 575px) {
   [role=banner] h2 {
     font-size: 2rem;
     align-self: flex-end;
@@ -66,26 +71,20 @@
   line-height: 1.5rem;
 }
 .summary a {
-  background-color: rgb(37, 37, 37);
-  border: none;
-  color: #fff;
-  padding: 6px 13px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 1.5rem;
-  transition: background-color 0.3s ease;
+  background-color: black;
+  color: #ffe81f;
+  padding: 5px;
 }
 .summary a:hover {
-  background-color: rgb(54, 187, 248);
-  color: rgb(37, 37, 37);
+  color: rgb(54, 187, 248);
 }
 
 .summary::before {
   content: "";
   padding: 2rem;
-  background: url(/zen-garden-projectg2/assets/icons8-star-wars.svg) no-repeat center center;
+  background: url(/zen-garden-projectg2/assets/icons8-star-wars.svg) no-repeat center;
   margin: 1rem auto;
+  transform: scale(3);
 }
 
 .summary::after {
@@ -138,6 +137,7 @@
   padding: 3rem;
   margin-top: -3rem;
   display: block;
+  transform: scale(2);
 }
 
 .design-archives ul {
@@ -152,7 +152,7 @@
   color: rgb(37, 37, 37);
   padding: 0.5rem;
   cursor: pointer;
-  text-transform: uppercase;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 .design-archives ul a:hover {
@@ -234,6 +234,7 @@ p {
 a {
   background-color: black;
   color: #ffe81f;
+  padding: 5px;
 }
 a:hover {
   color: rgb(54, 187, 248);
@@ -261,7 +262,7 @@ a:hover {
 }
 
 .design-archives {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/archive-foto.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/archive-foto.jpg");
   border-radius: 1.5rem;
   padding: 1rem;
   margin: 1rem auto;
@@ -293,7 +294,7 @@ a:hover {
   background-color: #2b2a23;
   text-align: center;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1.5rem;
   width: 95%;
 }
@@ -301,7 +302,7 @@ a:hover {
 #zen-supporting {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/stars.jpg");
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1.5rem;
   width: 95%;
 }

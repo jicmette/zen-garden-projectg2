@@ -12,28 +12,10 @@
   padding: 1rem;
 }
 
-
-@mixin star-wars-black-button($color: $background-color) {
-  background-color: $color;
-  border: none;
-  color: $color-text;
-  padding: 6px 13px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 1.5rem;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: $color-a;
-    color: $color-text-light;
-  }
-}
-
-
 @mixin a-style-body {
   background-color: black; 
   color: $color-headlines;
+  padding: 5px;
 
   &:hover {
     color: $color-a;
@@ -42,7 +24,7 @@
 
 @mixin content-style {
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1.5rem;
   width: 95%;
 }
@@ -76,7 +58,7 @@
     color: $color-text-light;
     padding: .5rem;
     cursor: pointer;
-    text-transform: uppercase;
+    font-size: .8rem;
     font-weight: bold;
     
 
