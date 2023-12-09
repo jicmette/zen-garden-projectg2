@@ -134,10 +134,9 @@
 .preamble h3::before {
   content: "";
   background: url(/zen-garden-projectg2/assets/icons8-jedi-order.svg) no-repeat center;
-  padding: 3rem;
+  padding: 2rem 0;
   margin-top: -3rem;
   display: block;
-  transform: scale(2);
 }
 
 .design-archives ul {
@@ -153,7 +152,6 @@
   padding: 0.5rem;
   cursor: pointer;
   font-size: 0.8rem;
-  font-weight: bold;
 }
 .design-archives ul a:hover {
   color: #ffe81f;
