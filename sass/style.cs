@@ -39,6 +39,11 @@
     margin: 0;
   }
 }
+@media only screen and (min-width: 56.25em) {
+  [role=banner] h1 {
+    font-size: 6rem;
+  }
+}
 [role=banner] h2 {
   font-size: 1rem;
   font-style: italic;
@@ -433,4 +438,4 @@ a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

@@ -40,16 +40,11 @@ a {
 }
 
 .design-archives {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/archive-foto.jpg');
-  background-repeat: no-repeat;
-  object-fit: scale-down;
-  object-position: top;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/archive-foto.jpg') no-repeat;
   border-radius: 1.5rem;
-  height: auto;
-  padding-bottom: 1rem;
-  margin: 2rem auto;
-
-  @include grid-two-col;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 95%;
 }
 
 .design-selection ul {
