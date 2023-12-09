@@ -12,22 +12,8 @@ html {
 body {
   font-family: $fonts-body;
   color: $color-text;
-  margin: 0 auto;
-  padding: 1em;
-  
+  margin: 1 auto;
 }
-
-h1 {
-  font-size: 2rem;
-  color: $color-headlines;
-  margin: 1rem;
-  font-weight: bolder;
-}
-
-h2 {
-  font-size: 1rem;
-}
-
 li {
   list-style-type: none;
 }

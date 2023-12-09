@@ -41,9 +41,10 @@
 }
 
 @mixin content-style {
-  margin: 1rem;
-  padding: 1.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
   border-radius: 1.5rem;
+  width: 95%;
 }
 
 
@@ -112,4 +113,16 @@
 
 @mixin designer-name-style {
   font-style: italic;
+}
+
+@mixin medium-view {
+  @media only screen and (min-width: $medium) {
+      @content
+  }
+}
+
+@mixin large-view {
+  @media only screen and (min-width: $large) {
+      @content
+  }
 }
