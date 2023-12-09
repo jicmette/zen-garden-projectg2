@@ -292,7 +292,7 @@ a:hover {
   background-color: #2b2a23;
   text-align: center;
   margin: 1rem auto;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   width: 95%;
 }
@@ -300,7 +300,7 @@ a:hover {
 #zen-supporting {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/stars.jpg");
   margin: 1rem auto;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   width: 95%;
 }
