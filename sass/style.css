@@ -482,7 +482,7 @@ a:hover {
   grid-column: 1/3;
 }
 .zen-resources ul::after {
-  content: "All SVG icons by Icons8 (https://icons8.com/icons). Credits to unknown authors from background images. Star Wars, its logo, and all related characters and elements are trademarks of and © Lucasfilm Ltd. All rights reserved. This website is not endorsed by, directly affiliated with, maintained, authorized, or sponsored by Lucasfilm Ltd. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for educational purposes only and does not imply any association with the trademark holder of their product brand.";
+  content: "Fall 2023 WDD 331R Advance CSS - All SVG icons by Icons8 (https://icons8.com/icons). Credits to unknown authors from background images. Star Wars, its logo, and all related characters and elements are trademarks of and © Lucasfilm Ltd. All rights reserved. This website is not endorsed by, directly affiliated with, maintained, authorized, or sponsored by Lucasfilm Ltd. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for educational purposes only and does not imply any association with the trademark holder of their product brand.";
   color: #fff;
   font-size: 0.7rem;
   text-align: center;
