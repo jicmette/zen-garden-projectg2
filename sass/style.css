@@ -304,7 +304,7 @@ a:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/archive-foto.jpg");
   border-radius: 1.5rem;
   padding: 1rem;
-  margin: 1rem auto;
+  margin: 3rem auto;
   width: 95%;
 }
 
@@ -466,6 +466,13 @@ a:hover {
   width: 95%;
   margin: 1rem auto;
   align-items: center;
+}
+@media only screen and (min-width: 1200px) {
+  .zen-resources ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
 .zen-resources ul a {
   background-color: inherit;

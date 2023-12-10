@@ -49,7 +49,7 @@ a {
     url("/zen-garden-projectg2/assets/archive-foto.jpg");
   border-radius: 1.5rem;
   padding: 1rem;
-  margin: 1rem auto;
+  margin: 3rem auto;
   width: 95%;
 }
 
@@ -175,6 +175,12 @@ a {
 
 .zen-resources ul {
   @include grid-designs;
+
+  @include large-view {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
 
   a {
     background-color: inherit;
