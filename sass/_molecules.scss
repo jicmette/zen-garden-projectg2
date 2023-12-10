@@ -5,7 +5,6 @@
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 
-
 h3 {
   @include h3-style;
 }
@@ -18,8 +17,9 @@ a {
   @include a-style-body;
 }
 
-[role=contentinfo] {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/zen-garden-projectg2/assets/hyper-space.jpg) no-repeat center;
+[role="contentinfo"] {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(/zen-garden-projectg2/assets/hyper-space.jpg) no-repeat center;
   width: 85%;
   height: auto;
   padding: 1rem;
@@ -27,10 +27,15 @@ a {
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 1rem auto;
-  text-align: right
+  text-align: right;
+
+  @include large-view {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url(/zen-garden-projectg2/assets/hyper-space.jpg) center;
+  }
 }
 
-[role=navigation] {
+[role="navigation"] {
   margin: 1rem auto;
   width: 95%;
 }
@@ -40,7 +45,8 @@ a {
 }
 
 .design-archives {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/archive-foto.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/zen-garden-projectg2/assets/archive-foto.jpg");
   border-radius: 1.5rem;
   padding: 1rem;
   margin: 1rem auto;
@@ -50,25 +56,121 @@ a {
 .design-selection ul {
   @include grid-designs;
   margin: 1rem auto;
-  
-  .design-name{
+
+  .design-name {
     @include design-names;
     &:hover {
       color: $color-headlines;
     }
   }
-  
 }
 
 .preamble {
   background-color: $background-content;
   text-align: center;
   @include content-style;
+
+  @include large-view {
+    width: 90%;
+  }
 }
 
 #zen-supporting {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/zen-garden-projectg2/assets/stars.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/zen-garden-projectg2/assets/stars.jpg");
   @include content-style;
+  grid-column: 1/5;
+
+  @include large-view {
+    display: grid;
+    padding: 3rem;
+  }
+}
+
+.explanation {
+  @include large-view {
+    @include main-content-format-large;
+    grid-template-rows: repeat(2, auto);
+
+    h3 {
+      @include h3-large-main-content;
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+
+    p {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    p:last-child {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  }
+}
+
+.participation {
+  @include large-view {
+    @include main-content-format-large;
+    grid-template-rows: repeat(3, auto);
+
+    h3 {
+      @include h3-large-main-content;
+      grid-column: 1/2;
+      grid-row: 1/4;
+    }
+  }
+}
+
+.benefits {
+  @include large-view {
+    @include main-content-format-large;
+    grid-template-rows: auto;
+
+    h3 {
+      @include h3-large-main-content;
+    }
+  }
+}
+
+.requirements {
+  @include large-view {
+    @include main-content-format-large;
+    grid-template-rows: repeat(6, auto);
+
+    h3 {
+      @include h3-large-main-content;
+      grid-row: 1/6;
+    }
+
+    p:first-child {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    p:nth-child(3) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    p:nth-child(4) {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    p:nth-child(5) {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+
+    [role=contentinfo] {
+      grid-column: 1/3;
+      grid-row: 6/7;
+      padding: 5rem;
+      width: 95%;
+    }
+  }
 }
 
 .zen-resources ul {
@@ -85,9 +187,10 @@ a {
 
 .design-selection li:nth-child(1)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-mando.svg) no-repeat center;
-  transform: scale(.9);
-  
+  background: url(/zen-garden-projectg2/assets/icons8-mando.svg) no-repeat
+    center;
+  transform: scale(0.9);
+
   & {
     @include size-svg;
   }
@@ -95,9 +198,10 @@ a {
 
 .design-selection li:nth-child(2)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-luke-skywalker.svg) no-repeat center center;
+  background: url(/zen-garden-projectg2/assets/icons8-luke-skywalker.svg)
+    no-repeat center center;
   transform: scale(1.5);
-  
+
   & {
     @include size-svg;
   }
@@ -105,9 +209,10 @@ a {
 
 .design-selection li:nth-child(3)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-darthvader.svg) no-repeat center center;
+  background: url(/zen-garden-projectg2/assets/icons8-darthvader.svg) no-repeat
+    center center;
   transform: scale(1.5);
-  
+
   & {
     @include size-svg;
   }
@@ -115,9 +220,10 @@ a {
 
 .design-selection li:nth-child(4)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-r2-d2.svg) no-repeat center center;
+  background: url(/zen-garden-projectg2/assets/icons8-r2-d2.svg) no-repeat
+    center center;
   transform: scale(1.5);
-  
+
   & {
     @include size-svg;
   }
@@ -125,9 +231,10 @@ a {
 
 .design-selection li:nth-child(5)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-trooper.svg) no-repeat center center;
-  transform: scale(.9);
-  
+  background: url(/zen-garden-projectg2/assets/icons8-trooper.svg) no-repeat
+    center center;
+  transform: scale(0.9);
+
   & {
     @include size-svg;
   }
@@ -135,8 +242,9 @@ a {
 
 .design-selection li:nth-child(6)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-yoda.svg) no-repeat center center;
-  transform: scale(.8);
+  background: url(/zen-garden-projectg2/assets/icons8-yoda.svg) no-repeat center
+    center;
+  transform: scale(0.8);
 
   & {
     @include size-svg;
@@ -145,18 +253,19 @@ a {
 
 .design-selection li:nth-child(7)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-chewbacca.svg) no-repeat center center;
+  background: url(/zen-garden-projectg2/assets/icons8-chewbacca.svg) no-repeat
+    center center;
   transform: scale(1.5);
 
   & {
     @include size-svg;
   }
-  
 }
 
 .design-selection li:nth-child(8)::after {
   content: "";
-  background: url(/zen-garden-projectg2/assets/icons8-c-3po.svg) no-repeat center center;
+  background: url(/zen-garden-projectg2/assets/icons8-c-3po.svg) no-repeat
+    center center;
   transform: scale(1.5);
 
   & {
