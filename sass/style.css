@@ -287,13 +287,22 @@ a:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/zen-garden-projectg2/assets/hyper-space.jpg) no-repeat center;
   border-radius: 1.5rem;
   font-size: 1.5rem;
+  padding: 1rem;
   line-height: 2rem;
   margin: 1rem auto;
   text-align: right;
 }
+@media only screen and (min-width: 600px) {
+  [role=contentinfo] {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    margin: 1rem;
+  }
+}
 @media only screen and (min-width: 1200px) {
   [role=contentinfo] {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/zen-garden-projectg2/assets/hyper-space.jpg) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 
