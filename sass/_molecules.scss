@@ -20,9 +20,6 @@ a {
 [role="contentinfo"] {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(/zen-garden-projectg2/assets/hyper-space.jpg) no-repeat center;
-  width: 85%;
-  height: auto;
-  padding: 1rem;
   border-radius: 1.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -208,6 +205,12 @@ a {
   & {
     @include size-svg;
   }
+
+  @include large-view {
+    transform: scale(0.6);
+  }
+
+
 }
 
 .design-selection li:nth-child(2)::after {
@@ -218,6 +221,10 @@ a {
 
   & {
     @include size-svg;
+  }
+
+  @include large-view {
+    transform: scale(1);
   }
 }
 
@@ -230,6 +237,10 @@ a {
   & {
     @include size-svg;
   }
+
+  @include large-view {
+    transform: scale(1.1);
+  }
 }
 
 .design-selection li:nth-child(4)::after {
@@ -240,6 +251,10 @@ a {
 
   & {
     @include size-svg;
+  }
+
+  @include large-view {
+    transform: scale(1.1);
   }
 }
 
@@ -252,6 +267,10 @@ a {
   & {
     @include size-svg;
   }
+
+  @include large-view {
+    transform: scale(0.6);
+  }
 }
 
 .design-selection li:nth-child(6)::after {
@@ -262,6 +281,10 @@ a {
 
   & {
     @include size-svg;
+  }
+
+  @include large-view {
+    transform: scale(0.5);
   }
 }
 
@@ -274,6 +297,10 @@ a {
   & {
     @include size-svg;
   }
+
+  @include large-view {
+    transform: scale(1);
+  }
 }
 
 .design-selection li:nth-child(8)::after {
@@ -284,6 +311,10 @@ a {
 
   & {
     @include size-svg;
+  }
+
+  @include large-view {
+    transform: scale(1);
   }
 }
 
