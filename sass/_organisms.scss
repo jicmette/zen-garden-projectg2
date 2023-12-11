@@ -183,6 +183,12 @@
   a {
     @include a-style-archive;
   }
+
+  @include large-view {
+    a {
+      text-transform: uppercase;
+    }
+  }
 }
 
 .supporting footer {

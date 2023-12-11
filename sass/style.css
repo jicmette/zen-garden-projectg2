@@ -186,6 +186,11 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/zen-garden-projectg2/assets/Clone-Trooper-wallpapers-HD-for-desktop-backgrounds.jpg");
   object-fit: fill;
 }
+@media only screen and (min-width: 1200px) {
+  .design-archives ul a {
+    text-transform: uppercase;
+  }
+}
 
 .supporting footer {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(140, 122, 36) 100%);
@@ -277,9 +282,6 @@ a:hover {
 
 [role=contentinfo] {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/zen-garden-projectg2/assets/hyper-space.jpg) no-repeat center;
-  width: 85%;
-  height: auto;
-  padding: 1rem;
   border-radius: 1.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -499,6 +501,11 @@ a:hover {
   display: block;
   margin: 1rem;
 }
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(1)::after {
+    transform: scale(0.6);
+  }
+}
 
 .design-selection li:nth-child(2)::after {
   content: "";
@@ -509,6 +516,11 @@ a:hover {
   padding: 3rem;
   display: block;
   margin: 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(2)::after {
+    transform: scale(1);
+  }
 }
 
 .design-selection li:nth-child(3)::after {
@@ -521,6 +533,11 @@ a:hover {
   display: block;
   margin: 1rem;
 }
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(3)::after {
+    transform: scale(1.1);
+  }
+}
 
 .design-selection li:nth-child(4)::after {
   content: "";
@@ -531,6 +548,11 @@ a:hover {
   padding: 3rem;
   display: block;
   margin: 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(4)::after {
+    transform: scale(1.1);
+  }
 }
 
 .design-selection li:nth-child(5)::after {
@@ -543,6 +565,11 @@ a:hover {
   display: block;
   margin: 1rem;
 }
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(5)::after {
+    transform: scale(0.6);
+  }
+}
 
 .design-selection li:nth-child(6)::after {
   content: "";
@@ -553,6 +580,11 @@ a:hover {
   padding: 3rem;
   display: block;
   margin: 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(6)::after {
+    transform: scale(0.5);
+  }
 }
 
 .design-selection li:nth-child(7)::after {
@@ -565,6 +597,11 @@ a:hover {
   display: block;
   margin: 1rem;
 }
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(7)::after {
+    transform: scale(1);
+  }
+}
 
 .design-selection li:nth-child(8)::after {
   content: "";
@@ -575,6 +612,11 @@ a:hover {
   padding: 3rem;
   display: block;
   margin: 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .design-selection li:nth-child(8)::after {
+    transform: scale(1);
+  }
 }
 
 * {
