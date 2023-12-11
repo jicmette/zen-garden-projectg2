@@ -214,37 +214,30 @@
 .zen-validate-html::before {
   content: "";
   background: url(/zen-garden-projectg2/assets/icons8-html-5.svg);
-  background-repeat: no-repeat;
-  display: block;
-  padding: 1.5rem;
-  margin: 0.5rem;
+  
+  @include footer-svg; 
 }
 
 .zen-validate-css::before {
   content: "";
   background: url(/zen-garden-projectg2/assets/icons8-css.svg);
   background-repeat: no-repeat;
-  display: block;
-  padding: 1.5rem;
-  margin: 0.5rem;
+
+  @include footer-svg;
 }
 
 .zen-license::before {
   content: "";
   background: url(https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo);
-  background-repeat: no-repeat;
-  display: block;
-  padding: 1.5rem;
-  margin: 0.5rem;
+  
+  @include footer-svg;
 }
 
 .zen-github::before {
   content: "";
   background: url(/zen-garden-projectg2/assets/icons8-github.svg);
-  background-repeat: no-repeat;
-  display: block;
-  padding: 1.5rem;
-  margin: 0.5rem;
+
+  @include footer-svg;
 }
 
 .sidebar {
